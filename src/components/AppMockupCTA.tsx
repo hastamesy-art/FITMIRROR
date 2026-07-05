@@ -43,7 +43,7 @@ export default function AppMockupCTA({ lookbookItems }: AppMockupCTAProps) {
               Download the FitMirror companion app today. Turn your smartphone into an endless digital runway, experiment with designer fabrics in real-time, and purchase with absolute confidence.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="flex flex-wrap items-stretch sm:items-center gap-4">
               {/* Custom Google Play Badge */}
               <a 
                 href="#download" 
@@ -51,13 +51,13 @@ export default function AppMockupCTA({ lookbookItems }: AppMockupCTAProps) {
                 className="group relative flex items-center gap-3.5 bg-slate-950 border border-white/10 hover:border-brand-purple/40 px-5 py-3 rounded-xl hover:bg-slate-900 transition-all duration-300 neon-glow"
               >
                 {/* SVG Play Store Logo */}
-                <svg className="w-6 h-6 text-white group-hover:text-brand-purple transition-colors" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3 5.25c0-1.21.99-2.2 2.2-2.2h13.6c1.21 0 2.2.99 2.2 2.2v13.5c0 1.21-.99 2.2-2.2 2.2H5.2c-1.21 0-2.2-.99-2.2-2.2V5.25z" fill="none"/>
+                <svg className="w-6 h-6 text-white group-hover:text-brand-purple transition-colors shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3 5.25c0-1.21.99-2.2 2.2-2.2h13.6c1.21 0 2.2.99 2.2 2.2v13.5c0 1.21-.99 2.2-2.2-2.2H5.2c-1.21 0-2.2-.99-2.2-2.2V5.25z" fill="none"/>
                   <path d="M5.25 3H18.75A2.25 2.25 0 0 1 21 5.25V18.75A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75V5.25A2.25 2.25 0 0 1 5.25 3M17.5 12 7 6v12l10.5-6z"/>
                 </svg>
                 <div className="text-left">
-                  <p className="font-sans text-[9px] uppercase tracking-wider text-slate-500 font-medium">Get it on</p>
-                  <p className="font-display font-bold text-sm text-white tracking-wide">Google Play</p>
+                  <p className="font-sans text-[9px] uppercase tracking-wider text-slate-500 font-medium whitespace-nowrap">Get it on</p>
+                  <p className="font-display font-bold text-sm text-white tracking-wide whitespace-nowrap">Google Play</p>
                 </div>
               </a>
 
@@ -68,12 +68,25 @@ export default function AppMockupCTA({ lookbookItems }: AppMockupCTAProps) {
                 className="group relative flex items-center gap-3.5 bg-slate-950 border border-white/10 hover:border-brand-indigo/40 px-5 py-3 rounded-xl hover:bg-slate-900 transition-all duration-300 neon-glow-indigo"
               >
                 {/* SVG App Store Logo */}
-                <svg className="w-6 h-6 text-white group-hover:text-brand-indigo transition-colors" viewBox="0 0 24 24" fill="currentColor">
+                <svg className="w-6 h-6 text-white group-hover:text-brand-indigo transition-colors shrink-0" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.11.67-2.83 1.51-.62.71-1.16 1.85-1.02 2.96 1.12.09 2.2-.6 2.86-1.41z"/>
                 </svg>
                 <div className="text-left">
-                  <p className="font-sans text-[9px] uppercase tracking-wider text-slate-500 font-medium">Download on the</p>
-                  <p className="font-display font-bold text-sm text-white tracking-wide">App Store</p>
+                  <p className="font-sans text-[9px] uppercase tracking-wider text-slate-500 font-medium whitespace-nowrap">Download on the</p>
+                  <p className="font-display font-bold text-sm text-white tracking-wide whitespace-nowrap">App Store</p>
+                </div>
+              </a>
+
+              {/* Direct APK Download Badge */}
+              <a 
+                href="/fitmirror-app.apk" 
+                download
+                className="group relative flex items-center gap-3.5 bg-slate-950 border border-white/10 hover:border-emerald-500/40 px-5 py-3 rounded-xl hover:bg-slate-900 transition-all duration-300 shadow-[0_0_0_rgba(16,185,129,0)] hover:shadow-[0_0_20px_rgba(16,185,129,0.2)]"
+              >
+                <Download className="w-6 h-6 text-white group-hover:text-emerald-400 transition-colors shrink-0" />
+                <div className="text-left">
+                  <p className="font-sans text-[9px] uppercase tracking-wider text-slate-500 font-medium whitespace-nowrap">Direct Download</p>
+                  <p className="font-display font-bold text-sm text-white tracking-wide whitespace-nowrap">Android APK</p>
                 </div>
               </a>
             </div>
