@@ -1,0 +1,6 @@
+{
+  "name": "FitMirror",
+  "description": "Premium landing page for FitMirror, an innovative AI-powered mobile app for virtual outfit fitting and photorealistic garment visualization using Gemini and SDXL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
